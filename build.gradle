@@ -42,9 +42,7 @@ java {
 
 // NOTE: This is me redirecting the build path for easier testing.
 // Now can run ./gradlew build --rerun & will update in plugins folder.
-jar {
-    destinationDirectory.set(file("$rootDir\\..\\BlossomTestServer\\plugins\\"))
-}
+// jar { destinationDirectory.set(file("$rootDir\\..\\BlossomTestServer\\plugins\\")) }
 
 tasks.withType(JavaCompile).configureEach {
     options.encoding = 'UTF-8'

@@ -22,11 +22,9 @@ public class WorldChangeListener implements Listener {
     @EventHandler
     public void onPlayerChangeWorld(PlayerChangedWorldEvent event) {
         final AbstractMap.SimpleEntry<Boolean, Boolean> entry = plugin.worldTeleports.remove(event.getPlayer().getUniqueId());
-        if (event.getPlayer().hasPermission("essentials.fly")) {
-            if (entry != null) {
-                event.getPlayer().setAllowFlight(entry.getKey());
-                event.getPlayer().setFlying(entry.getValue());
-            }
+        if (entry != null && event.getPlayer().hasPermission("essentials.fly")) {
+            event.getPlayer().setAllowFlight(entry.getKey());
+            event.getPlayer().setFlying(entry.getValue());
         }
     }
 
