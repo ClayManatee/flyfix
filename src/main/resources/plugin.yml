@@ -1,0 +1,20 @@
+name: flyfix
+version: '${version}'
+main: me.claymanatee.flyfix.FlyFix
+api-version: '1.0'
+description: A simple plugin that maintains your flight status when changing worlds in a Minecraft server!
+commands:
+  flyfixcheck:
+    usage: /<command>
+    aliases:
+      - ffcheck
+      - ffc
+  flyfixpurge:
+    usage: /<command>
+    aliases:
+      - ffpurge
+      - ffp
+permissions:
+  flyfix.flyfixall:
+    description: Allows check and purge commands to be used.
+    default: false
