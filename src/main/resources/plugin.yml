@@ -7,11 +7,11 @@ commands:
   flyfixcheck:
     usage: /<command>
     aliases: [ffcheck, ffc]
-    permission: flyflix.flyfixall
+    permission: flyfix.flyfixall
   flyfixpurge:
     usage: /<command>
     aliases: [ffpurge, ffp]
-    permission: flyflix.flyfixall
+    permission: flyfix.flyfixall
 permissions:
   flyfix.flyfixall:
     description: Allows check and purge commands to be used.
