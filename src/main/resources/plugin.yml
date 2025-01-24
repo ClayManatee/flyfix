@@ -6,14 +6,12 @@ description: A simple plugin that maintains your flight status when changing wor
 commands:
   flyfixcheck:
     usage: /<command>
-    aliases:
-      - ffcheck
-      - ffc
+    aliases: [ffcheck, ffc]
+    permission: flyflix.flyfixall
   flyfixpurge:
     usage: /<command>
-    aliases:
-      - ffpurge
-      - ffp
+    aliases: [ffpurge, ffp]
+    permission: flyflix.flyfixall
 permissions:
   flyfix.flyfixall:
     description: Allows check and purge commands to be used.
